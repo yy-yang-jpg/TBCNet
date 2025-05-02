@@ -1,0 +1,8 @@
+checkpoint: null
+testtype: CS
+dataset: n-ucla
+
+batch_size: 8
+num_workers: 4
+device: torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+

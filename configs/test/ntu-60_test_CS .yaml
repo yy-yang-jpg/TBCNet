@@ -1,0 +1,7 @@
+checkpoint: null
+testtype: CS
+dataset: ntu-60
+
+batch_size: 16
+num_workers: 8
+device: torch.device("cuda:0" if torch.cuda.is_available() else "cpu")

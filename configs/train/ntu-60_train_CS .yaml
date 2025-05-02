@@ -1,0 +1,18 @@
+checkpoint: null
+traintype: CS
+dataset: ntu-60
+loss: c
+
+batch_size: 16
+num_epochs: 150
+validation_interval: 10
+learning_rate: 1.0e-05
+weight_decay: 1.0e-05
+num_workers: 8
+device: torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+seed: 7
+temperature_f: 0.7
+optimizer: ADAMW
+cache: 'true'
+mixed_precision: false
+
